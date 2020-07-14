@@ -1,0 +1,33 @@
+@import '~@/styles/assets.less';
+
+.basicWarp {
+  max-width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  position: relative;
+  overflow: hidden;
+  background: @background;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  // background-size: 110% 90%;
+  background-size: 95% 70%;
+  .info {
+    position: absolute;
+    top: 20px;
+    left: 3%;
+    width: 60%;
+    height: 80%;
+    min-height: 450px;
+    background-color: #fff;
+    border-radius: 10px;
+    opacity: 0.9;
+    box-shadow: -2px 2px 10px rgba(129, 154, 179, 0.8);
+  }
+  .person {
+    position: absolute;
+    top: 0px;
+    right: 250px;
+    width: 50px;
+    height: 100px;
+  }
+}

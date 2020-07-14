@@ -1,0 +1,47 @@
+
+.content {
+  width: 100%;
+  min-height: 200px;
+
+  .title {
+    font-weight: 600;
+    font-size: 16px;
+    min-height: 24px;
+    margin-bottom: 20px;
+  }
+}
+
+.plat-modal {
+  :global {
+    .ant-modal,
+    .ant-modal-content {
+      border-radius: 0;
+      min-width: 600px;
+      min-height: 350px;
+      padding: 0;
+    }
+
+    .ant-modal-mask {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .ant-modal-footer {
+      border-radius: 0;
+      padding: 16px 24px;
+      border-top: 1px solid rgb(232, 232, 232);
+    }
+
+    .ant-modal-close {
+      top: 10px;
+      right: 10px;
+    }
+
+    .ant-btn {
+      border-radius: 2px;
+    }
+  }
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}

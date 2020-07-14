@@ -1,0 +1,57 @@
+{
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "start": "yarn start:dev",
+    "start:dev": "cross-env UMI_ENV=dev umi dev",
+    "build": "npm run build:dev",
+    "build:dev": "cross-env UMI_ENV=dev umi build",
+    "build:prod": "cross-env UMI_ENV=prod umi build",
+    "lint": "eslint --ext .js src mock tests",
+    "precommit": "lint-staged"
+  },
+  "dependencies": {
+    "@stripe/react-stripe-js": "^1.1.2",
+    "@stripe/stripe-js": "^1.7.0",
+    "antd": "^3.19.5",
+    "axios": "^0.19.0",
+    "dva": "^2.6.0-beta.6",
+    "loadcss": "^0.0.2",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "node-uuid": "^1.4.8",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-use": "^13.12.2",
+    "recoil": "^0.0.10",
+    "scriptjs": "^2.5.9"
+  },
+  "devDependencies": {
+    "babel-eslint": "^9.0.0",
+    "cross-env": "^6.0.3",
+    "eslint": "^5.4.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-umi": "^1.4.0",
+    "eslint-plugin-flowtype": "^2.50.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.2",
+    "mockjs": "^1.1.0",
+    "react-test-renderer": "^16.7.0",
+    "stylelint": "^13.3.3",
+    "stylelint-config-standard": "^20.0.0",
+    "umi": "^2.7.7",
+    "umi-plugin-react": "^1.8.4"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --fix --max-warnings 0",
+      "git add"
+    ]
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  }
+}

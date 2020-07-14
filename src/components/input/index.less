@@ -1,0 +1,22 @@
+@import '~@/styles/variable.less';
+
+.inputContainer {
+  position: relative;
+  .input {
+    width: 100%;
+    transition: none;
+  }
+  .placeholder {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    line-height: @input-height-base;
+    height: @input-height-base;
+    color: @primary-color-gray;
+  }
+  &.disabled {
+    .input {
+      color: #000;
+    }
+  }
+}

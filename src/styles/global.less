@@ -1,0 +1,47 @@
+@import '~@/styles/variable.less';
+
+:global {
+  .ant-input {
+    height: 36px;
+  }
+  .ant-form-item {
+    margin-bottom: 16px;
+  }
+
+  .ant-form-explain {
+    position: absolute;
+  }
+  .ant-btn-primary {
+    background-color: @primary-color;
+    border-color: @primary-color;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+      background-color: @primary-color;
+      border-color: @primary-color;
+    }
+  }
+
+  .ant-carousel {
+    .slick-slider {
+      .slick-arrow {
+        border: 10px solid #fff;
+        width: 0;
+        height: 0;
+      }
+      .slick-prev {
+        border-right: 12px solid @primary-color-gray;
+        &:hover {
+          border-right: 12px solid @primary-color;
+        }
+      }
+      .slick-next {
+        border-left: 12px solid @primary-color-gray;
+        &:hover {
+          border-left: 12px solid @primary-color;
+        }
+      }
+    }
+  }
+}

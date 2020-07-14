@@ -1,0 +1,48 @@
+@import '~@/styles/util.less';
+@import '~@/styles/variable.less';
+
+.container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  .url-content {
+    display: block;
+    height: 70%;
+    overflow-y: scroll;
+    .scrollBar();
+    .row {
+      background-color: #fff;
+      padding-left: 20px;
+      height: 42px;
+      line-height: 42px;
+      display: flex;
+      justify-content: start;
+      &:nth-of-type(odd) {
+        background-color: #bcdaf5;
+      }
+      .name {
+        font-weight: bold;
+      }
+      .path {
+        .textOverflow();
+        a {
+          color: @font-color;
+
+          &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
+  .config-content {
+    display: block;
+    height: 150px;
+    width: 100%;
+  }
+}
