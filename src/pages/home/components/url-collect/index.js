@@ -11,7 +11,7 @@ export default function UrlCollect() {
     window.open(url, '_blank');
   };
   return (
-    <div className={styles['container']}>
+    <>
       {/* 条纹区域 */}
       <div className={styles['url-content']}>
         {urlCollect.map(([name, url, flag], index) => (
@@ -29,6 +29,6 @@ export default function UrlCollect() {
       <div className={styles['config-content']}>
         <ConfigInfo />
       </div>
-    </div>
+    </>
   );
 }

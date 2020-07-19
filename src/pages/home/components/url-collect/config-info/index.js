@@ -26,7 +26,13 @@ export default function ConfigInfo() {
         <div className={styles.param}>
           {one.paramList.map((v, index) => (
             // v是二维数组
-            <Popover content={popRender(v)} trigger="click" placement="bottom" key={index}>
+            <Popover
+              content={popRender(v)}
+              title={v.name}
+              trigger="click"
+              placement="bottom"
+              key={index}
+            >
               <Tag color="blue">{v.name}</Tag>
             </Popover>
           ))}
